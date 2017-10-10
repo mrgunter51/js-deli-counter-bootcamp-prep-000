@@ -21,9 +21,11 @@ function currentLine(array){
   else{
     var str = "The line is currently:"
     for(let i = 0;i < array.length;i++){
-        str = str + ` ${i+1}. ${array[i]},`
+        str = str + ` ${i+1}. ${array[i]}`
+        if(i !== array.length - 1){
+          str += ','
+        }
     }
-    //str -= ','
     return str
   }
 }
