@@ -10,7 +10,7 @@ function nowServing(array) {
     return "There is nobody waiting to be served!"
   }
   else{
-    return array.pop()
+    return `Currently serving ${array.pop()}`
   }
 }
 
